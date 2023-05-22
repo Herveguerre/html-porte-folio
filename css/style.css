@@ -92,9 +92,19 @@ h2{
 /*fin bg footer et gestion taille */
 /*fin les back ground*/
 /*recherche*/
+.recherche{
+  margin-left:80vw;
+  margin-top: -190px;
+  margin-bottom: 190px;
+}
 #searchInput {
-  width: 300px;
+  max-width: 300px;
   padding: 5px;
+}
+@media (max-width: 1000px) {
+  input{
+    display: none;
+  }
 }
 
 #searchResults {
@@ -207,16 +217,16 @@ a{
   display: none;
   cursor: pointer;
   padding: 10px;
-  color: #ef0808;
+  color: #000000;
   z-index: 999;
   margin-top: 880px;
 }
 
 .bar {
-  color: #ff0000;
+  color: var(--clr-txt-blk);
   width: 25px;
   height: 3px;
-  background-color: #783636;
+  background-color: #030303;
   margin: 5px 0;
 }
 
