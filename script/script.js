@@ -65,3 +65,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+//recherche
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+
+searchInput.addEventListener('input', function() {
+  const searchText = searchInput.value.toLowerCase();
+  searchResults.innerHTML = '';
+
+  // Remplacez le contenu ci-dessous par votre propre logique de recherche
+  const data = ['Résultat 1', 'Résultat 2', 'Résultat 3', 'Résultat 4'];
+
+  data.forEach(function(item) {
+    if (item.toLowerCase().indexOf(searchText) !== -1) {
+      const li = document.createElement('li');
+      li.textContent = item;
+      searchResults.appendChild(li);
+    }
+  });
+});

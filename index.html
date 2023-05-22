@@ -24,13 +24,14 @@
         </div>
         </a> 
         </div>  
-        <div class="menu container " >
+        
+        <div class="menu container " >           
             <ul class="navbar-links" id="navbar-links">              
                 <button class="btn_theme"><a href="index.html">Home</a></button>
                 <button class="btn_theme"><a href="about.html">About</a></button>
                 <!--<button class="btn_theme"><a href="experience.html">Contact</a></button>-->
                 <button class="btn_theme"><a href="img/CV/cv.gif" download>Mon cv</a></button>
-            <button class="btn_theme" onclick="changerFichierCSS()">&#x263C;&#x263D;</button>
+            <button class="btn_theme" onclick="changerFichierCSS()">&#x263C;&#x263D;</button>           
             </ul>
             <div class="navbar-burger" onclick="toggleNavbar()">
                 <div class="bar"></div>
@@ -47,6 +48,9 @@
             <div class="divider">:</div>
             <div class="minute" id="minute"></div>
         </div>
+        <input type="text" id="searchInput" placeholder="Rechercher...">
+<ul id="searchResults"></ul>
+
     </nav>
 </header>
 <div class="line"></div>

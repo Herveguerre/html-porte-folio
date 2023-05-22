@@ -91,7 +91,22 @@ h2{
 
 /*fin bg footer et gestion taille */
 /*fin les back ground*/
+/*recherche*/
+#searchInput {
+  width: 300px;
+  padding: 5px;
+}
 
+#searchResults {
+  list-style-type: none;
+  padding: 0;
+}
+
+#searchResults li {
+  margin-bottom: 5px;
+}
+
+/*fin recherche*/
 /*titre*/
 
 .title{
