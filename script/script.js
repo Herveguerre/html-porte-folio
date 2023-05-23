@@ -132,3 +132,13 @@ searchInput.addEventListener('input', function() {
     }
   });
 });
+
+window.addEventListener('resize', function() {
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth >= 768) {
+    document.body.classList.add('desktop-mode');
+  } else {
+    document.body.classList.remove('desktop-mode');
+  }
+});
