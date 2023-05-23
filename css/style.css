@@ -1,8 +1,6 @@
                                                       /* les bases*/
                                                       
-.nav {
-  /* Styles de navigation communs pour tous les appareils */
-}
+
 
 *{
   margin: 0 auto;
@@ -235,7 +233,7 @@ a{
   margin: 5px 0;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
   .navbar-links {
     display: none;
   }
@@ -246,7 +244,7 @@ a{
   .title{
     display: block;
   }
-}
+}**/
 /*fin navigation*/
 
 /*logo*/
