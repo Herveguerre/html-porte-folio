@@ -133,12 +133,17 @@ searchInput.addEventListener('input', function() {
   });
 });
 
-window.addEventListener('resize', function() {
-  var screenWidth = window.innerWidth;
-
-  if (screenWidth >= 768) {
-    document.body.classList.add('desktop-mode');
+function detectDeviceAndRedirect() {
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  
+  if (isMobile) {
+    // Rediriger vers la version mobile du site
+    window.location.href = 'https://exemple.com/mobile';
   } else {
-    document.body.classList.remove('desktop-mode');
+    // Rester sur la version ordinateur du site
+    // Aucune action nécessaire
   }
-});
+}
+
+// Appeler la fonction pour détecter le type d'appareil et rediriger si nécessaire
+detectDeviceAndRedirect();
