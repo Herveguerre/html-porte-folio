@@ -8,7 +8,6 @@ function changerFichierCSS() {
   } else {
     lienCSS.setAttribute('href', 'css/style.css');
   }
-  
 }
 
 // fonctions pour que le style soit charger dans l'url 
@@ -94,6 +93,7 @@ expandButton.addEventListener('click', function() {
   }
 });
 
+
 //image dans projet 
 document.addEventListener('DOMContentLoaded', function() {
   var images = document.querySelectorAll('.projet img');
@@ -113,37 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//recherche
-const searchInput = document.getElementById('searchInput');
-const searchResults = document.getElementById('searchResults');
 
-searchInput.addEventListener('input', function() {
-  const searchText = searchInput.value.toLowerCase();
-  searchResults.innerHTML = '';
 
-  // Remplacez le contenu ci-dessous par votre propre logique de recherche
-  const data = ['Résultat 1', 'Résultat 2', 'Résultat 3', 'Résultat 4'];
 
-  data.forEach(function(item) {
-    if (item.toLowerCase().indexOf(searchText) !== -1) {
-      const li = document.createElement('li');
-      li.textContent = item;
-      searchResults.appendChild(li);
-    }
-  });
-});
 
-function detectDeviceAndRedirect() {
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Google/i.test(navigator.userAgent);
-  
-  if (isMobile) {
-    // Rediriger vers la version mobile du site
-    window.location.href = '';
-  } else {
-    // Rester sur la version ordinateur du site
-    // Aucune action nécessaire
-  }
-}
-
-// Appeler la fonction pour détecter le type d'appareil et rediriger si nécessaire
-detectDeviceAndRedirect();
