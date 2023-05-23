@@ -134,11 +134,11 @@ searchInput.addEventListener('input', function() {
 });
 
 function detectDeviceAndRedirect() {
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Google/i.test(navigator.userAgent);
   
   if (isMobile) {
     // Rediriger vers la version mobile du site
-    window.location.href = 'https://exemple.com/mobile';
+    window.location.href = '';
   } else {
     // Rester sur la version ordinateur du site
     // Aucune action nécessaire
