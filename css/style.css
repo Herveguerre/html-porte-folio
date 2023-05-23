@@ -1,4 +1,9 @@
                                                       /* les bases*/
+                                                      
+.nav {
+  /* Styles de navigation communs pour tous les appareils */
+}
+
 *{
   margin: 0 auto;
   box-sizing: border-box;
