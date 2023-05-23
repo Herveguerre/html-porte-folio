@@ -3,12 +3,14 @@
   margin: 0 auto;
   box-sizing: border-box;
   /*border:solid 1px #03a9f4 ;*/
+  font-family: Inconsolata;
 }
 :root {
   --clr-txt-w: #f4f4f4;
   --clr-txt-blk: #5a585c;
   --clr-txt-bl-1: #dddddd;
   --clr-txt-bl-2: #bebebe;
+  font-family: Inconsolata;
 }
 /* masquer la barre de scroll lorsque il y a      */
 ::-webkit-scrollbar {
