@@ -112,18 +112,18 @@ color: #e7e7e7;
     }
   }
   
-  .card_1::after {
-    content: '';
-    position: absolute;
-    background: #000000;
-    
-    inset: 5px;
-    border-radius: 15px;
-  }  
-  .card_1:hover:before {
-    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
-    animation: rotBGimg 3.5s linear infinite;
-  } 
+.card_1::after {
+  content: '';
+  position: absolute;
+  background: #000000;
+  
+  inset: 5px;
+  border-radius: 15px;
+}  
+.card_1:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} 
   
   /*titre*/
 

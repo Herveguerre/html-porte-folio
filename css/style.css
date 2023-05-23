@@ -343,6 +343,23 @@ a{
 
 /*fin horloge*/
 
+/*slide_logo*/
+.slide_logo{
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.slide_logo img{
+  
+  padding: 5px;
+  height: 70px;
+  
+
+  
+}
+/*slide_logo*/
+
                                       /* les pages   */
 
 /* projet */
