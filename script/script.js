@@ -112,8 +112,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-
-
-
-
