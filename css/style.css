@@ -23,11 +23,10 @@
 
                                                       /*les back ground*/
 .header{
-    background-image: url(/img/bg\ blanc5.jpg);
-    background-size: cover; 
-    background-position: top center;
-    
-    height: 990px;
+  background-image: url(/img/bg\ blanc5.jpg);
+  background-size: cover; 
+  background-position: top center;
+  height: 990px;
     
 }
 
@@ -175,7 +174,6 @@ button:before {
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  
   background-size: 400%;
   border-radius: 35px;
   transition: 1s;
