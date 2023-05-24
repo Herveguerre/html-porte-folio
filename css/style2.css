@@ -243,26 +243,6 @@ a{
   margin-left: 50%;
 }
 
-.bar {
-  color: #ff0000;
-  width: 25px;
-  height: 3px;
-  background-color: #783636;
-  margin: 5px 0;
-}
-
-@media only screen and (max-width: 668px) {
-  .navbar-links {
-    display: none;
-  }
-
-  .navbar-burger {
-    display: block;
-  }
-  .title{
-    display: block;
-  }
-}
 /*fin navigation*/
 
 /*logo*/
@@ -484,4 +464,18 @@ a{
 .form_f button:hover {
   background-color: #27408b;
 }
- /*fin form*/
+/*fin form*/
+
+/*media nav*/
+@media only screen and (max-width: 668px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: block;
+  }
+  .title{
+    display: block;
+  }
+}
