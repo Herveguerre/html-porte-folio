@@ -188,13 +188,24 @@ button:hover::before {
 /*fin bouton */
 
 /* navigation*/
-nav {
-  
+.nav {
   padding: 10px;
 }
 
 .navbar-logo img{
   height: 20vw;
+}
+
+.btn_theme_burger{
+  cursor: pointer;
+  margin-top: 5px;
+  z-index: 999;
+}
+
+.btn_theme{
+  cursor: pointer;
+  margin-top: 900px;
+  z-index: 999;
 }
 
 .navbar-links{
@@ -222,7 +233,8 @@ a{
   padding: 10px;
   color: #000000;
   z-index: 999;
-  margin-top: 880px;
+  margin-top: 850px;
+  margin-left: 50%;
 }
 
 .bar {
@@ -233,7 +245,7 @@ a{
   margin: 5px 0;
 }
 
-/*@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 668px) {
   .navbar-links {
     display: none;
   }
@@ -244,7 +256,8 @@ a{
   .title{
     display: block;
   }
-}**/
+}
+
 /*fin navigation*/
 
 /*logo*/
