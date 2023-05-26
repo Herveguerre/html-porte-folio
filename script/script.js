@@ -191,3 +191,9 @@ app.listen(3000, () => {
     console.log('Serveur démarré sur le port 3000');
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Code à exécuter lorsque la page est entièrement chargée
+
+  // Incluez ici votre code JavaScript qui manipule le DOM, ajoute des événements, etc.
+});

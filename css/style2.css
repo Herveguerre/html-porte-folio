@@ -17,8 +17,6 @@ main{
   height: auto;
 }
 
-
-
 h2{
 text-align: center;
 align-items: center;
@@ -48,7 +46,6 @@ height: 800px;
 
 #expandButton{
 margin-left: 20px;
-
 }
 
 .card_f{
@@ -189,7 +186,6 @@ button:before {
 button:hover::before {
   filter: blur(20px);
 }
-
 
 /*fin bouton */
 

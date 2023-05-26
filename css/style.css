@@ -1,7 +1,5 @@
                                                       /* les bases*/
                                                       
-
-
 *{
   margin: 0 auto;
   box-sizing: border-box;
@@ -237,9 +235,6 @@ a{
   margin-left: 50%;
 }
 
-
-
-
 /*fin navigation*/
 
 /*logo*/
@@ -248,7 +243,6 @@ a{
 }
 
 .logo {
-  
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -311,16 +305,17 @@ a{
     width: 0;
 }
 .scroll-container {
-    width: 400px;
-    height: 200px;
-    overflow-x: hidden;
-  }
+  width: 400px;
+  height: 200px;
+  overflow-x: hidden;
+}
   
-  .content {
-    width: 900px; /* Largeur totale du contenu */
-    height: 200px;
-    display: flex;
-  }
+.content {
+  width: 900px; /* Largeur totale du contenu */
+  height: 200px;
+  display: flex;
+
+}
 /*fin outils*/
 
 /*horloge*/
@@ -348,14 +343,12 @@ a{
   margin: 0 auto;
   text-align: center;
 }
+
 .slide_logo img{
-  
   padding: 5px;
   height: 70px;
-  
-
-  
 }
+
 /*slide_logo*/
 
                                       /* les pages   */
@@ -371,8 +364,8 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
+
 .card_1{
   height: 320px;
   width: 280px;
@@ -394,7 +387,7 @@ a{
   justify-content: top;
 }
 
-  .card_1 img{
+.card_1 img{
   height: 93%;
   opacity: 0.1s ;
   z-index: 999;
@@ -414,10 +407,10 @@ text-align: center;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
-  .card_1 p:hover{
-    font-size: 50px;
-    cursor: pointer;
-  }
+.card_1 p:hover{
+  font-size: 50px;
+  cursor: pointer;
+}
 
 /* fin projet*/
 
@@ -475,49 +468,49 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 .loader-wrapper {
   padding-left: 29px;
   padding-top: 120px;
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
   
-  .loader-wrapper .packman::before {
-    z-index: 99;
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 25px;
-    background-color: #EFF107;
-    border-radius: 100px 100px 0 0;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-animation: pac-top 0.5s linear infinite;
-            animation: pac-top 0.5s linear infinite;
-    -webkit-transform-origin: center bottom;
-        -ms-transform-origin: center bottom;
-            transform-origin: center bottom;
-  }
+.loader-wrapper .packman::before {
+  z-index: 99;
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background-color: #EFF107;
+  border-radius: 100px 100px 0 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: pac-top 0.5s linear infinite;
+          animation: pac-top 0.5s linear infinite;
+  -webkit-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
   
-  .loader-wrapper .packman::after {
-    z-index: 99;
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 25px;
-    background-color: #EFF107;
-    border-radius: 0 0 100px 100px;
-    -webkit-transform: translate(-50%, 50%);
-        -ms-transform: translate(-50%, 50%);
-            transform: translate(-50%, 50%);
-    -webkit-animation: pac-bot 0.5s linear infinite;
-            animation: pac-bot 0.5s linear infinite;
-    -webkit-transform-origin: center top;
-        -ms-transform-origin: center top;
-            transform-origin: center top;
-  }
+.loader-wrapper .packman::after {
+  z-index: 99;
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background-color: #EFF107;
+  border-radius: 0 0 100px 100px;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  -webkit-animation: pac-bot 0.5s linear infinite;
+          animation: pac-bot 0.5s linear infinite;
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+}
   
   @-webkit-keyframes pac-top {
     0% {
