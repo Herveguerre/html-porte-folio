@@ -78,7 +78,7 @@ h2{
 }
 .card_f {
   background: rgba( 31, 19, 130, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba(20, 23, 58, 0.37);
   backdrop-filter: blur( 3px );
   -webkit-backdrop-filter: blur( 3px );
   border-radius: 10px;
@@ -316,6 +316,9 @@ a{
   display: flex;
 
 }
+.flex{
+  display: flex;
+}
 /*fin outils*/
 
 /*horloge*/
@@ -335,6 +338,24 @@ a{
 }
 
 /*fin horloge*/
+
+/*cv*/
+
+.cv{
+  text-align: center;
+}
+
+.cv img{
+  margin-bottom: 20px;
+  width: 500px;
+  height: auto;
+  
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+}
+
+/*fin cv*/
 
 /*slide_logo*/
 .slide_logo{
@@ -392,7 +413,6 @@ a{
   opacity: 0.1s ;
   z-index: 999;
   border-radius: 10px;
-    
 }
 
 .card_1 p{
@@ -401,10 +421,18 @@ position: absolute;
 top: 50%; 
 left: 50%;
 transform: translate(-50%, -50%); 
-color: rgb(0, 0, 0); 
-font-size: 30px; 
+font-size: 40px; 
+font-weight: 800;
 text-align: center; 
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.pw{
+  color: var(--clr-txt-w);
+}
+
+.pb{
+  color: #000000;
 }
 
 .card_1 p:hover{
@@ -424,7 +452,6 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 /*projets*/
 .projet{
   text-align: center;
-  color: #000000;
   min-height: 800px;
 }
 /* gestion img*/
@@ -462,7 +489,6 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 /*fin home*/ 
 
   /*footer*/
-
 
   /*pacman 203L*/
 .loader-wrapper {
@@ -673,7 +699,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   .card svg {
     height: 25px;
   }
-  
+
   .card {
     position: relative;
     display: flex;
@@ -791,62 +817,9 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /*fin footer*/
 
     /*form*/
-    .form {
-      margin-top: 25px;
-      position: relative;
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 10px;
-      width: 300px;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
-    }
-    
-    .form .title {
-      color: royalblue;
-      font-size: 30px;
-      font-weight: 600;
-      letter-spacing: -1px;
-      line-height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .form input {
-      outline: 0;
-      border: 1px solid rgb(219, 213, 213);
-      padding: 8px 14px;
-      border-radius: 8px;
-      width: 100%;
-      height: 50px;
-    }
-    
-    .form textarea {
-      border-radius: 8px;
-      height: 100px;
-      width: 100%;
-      resize: none;
-      outline: 0;
-      padding: 8px 14px;
-      border: 1px solid rgb(219, 213, 213);
-    }
-    
-    .form button {
-      align-self: flex-end;
-      padding: 8px;
-      outline: 0;
-      border: 0;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      background-color: royalblue;
-      color: #fff;
-      cursor: pointer;
-    }
+.contact{
+  margin-bottom: 20px;
+}
         
 /*fin form*/
 
