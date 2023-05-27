@@ -447,11 +447,9 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   width: 300px;
 }
 .projet img.rotate {
-  transform: rotate(90deg);
-  width: 140vw;
-  margin-left: -65px;
+  width: 500px;
   z-index: 99999;
-  
+  position: absolute;
 }
 /*fin gestion img*/
 
@@ -818,5 +816,15 @@ footer p{
   }
   .title{
     display: block;
+  }
+  header{
+    height: 400px;
+  }
+  .projet img.rotate {
+    transform: rotate(90deg);
+    width: 140vw;
+    margin-left: -65px;
+    z-index: 99999;
+    
   }
 }

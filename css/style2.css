@@ -383,16 +383,3 @@ footer p{
 
 /*fin form*/
 
-/*media nav*/
-@media only screen and (max-width: 668px) {
-  .navbar-links {
-    display: none;
-  }
-
-  .navbar-burger {
-    display: block;
-  }
-  .title{
-    display: block;
-  }
-}
