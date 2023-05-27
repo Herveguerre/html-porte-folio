@@ -455,8 +455,8 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 /*fin home*/ 
 
   /*footer*/
-.center{
-  justify-content:space-between;
+.btn_theme_s{
+  margin-left: 20px;
 }
 
 footer p{
