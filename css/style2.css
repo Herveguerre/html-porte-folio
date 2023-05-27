@@ -1,21 +1,14 @@
+/*                                    theme couleur*/
+
 /*les back ground*/
 .header{
-  background-image: url(/img/1950700.jpg);
+  background-image: url(/img/7.png);
   background-size: cover; 
   background-position: top center;
-  height: 890px;
+  /*height: 890px;*/
+  height: 90vh;
   margin-bottom: -2px; 
   position: relative;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 main{
@@ -136,7 +129,6 @@ color: #e7e7e7;
 /*titre*/
 
 .title{
-  background-color: transparent;
   padding-top: 50px;
   text-shadow: 15px 2px 8px rgba(0, 0, 0, 0.5);
   font-size: clamp(16px, 4vw, 90px);
@@ -386,6 +378,9 @@ a{
 }
 /*fin about*/ 
 /*form*/
+footer p{
+  color: var(--clr-txt-w);
+}
 
 /*fin form*/
 

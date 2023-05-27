@@ -1,4 +1,4 @@
-                                                      /* les bases*/
+   /*      les bases                       theme blanc*/
                                                       
 *{
   margin: 0 auto;
@@ -93,32 +93,7 @@ h2{
 
 /*fin bg footer et gestion taille */
 /*fin les back ground*/
-/*recherche*/
-.recherche{
-  margin-left:80vw;
-  margin-top: -190px;
-  margin-bottom: 190px;
-}
-#searchInput {
-  max-width: 300px;
-  padding: 5px;
-}
-@media (max-width: 1000px) {
-  input{
-    display: none;
-  }
-}
 
-#searchResults {
-  list-style-type: none;
-  padding: 0;
-}
-
-#searchResults li {
-  margin-bottom: 5px;
-}
-
-/*fin recherche*/
 /*titre*/
 
 .title{
@@ -276,6 +251,7 @@ a{
 }
 
 .name {
+  padding-left: 5px;
   position: absolute;
   top: 50%;
   left: 100%;
@@ -367,6 +343,7 @@ a{
 .slide_logo img{
   padding: 5px;
   height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*slide_logo*/
@@ -490,6 +467,9 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   /*footer*/
 
   /*pacman 203L*/
+  footer p{
+    color: var(--clr-txt-blk);
+  }
 .loader-wrapper {
   padding-left: 29px;
   padding-top: 120px;
