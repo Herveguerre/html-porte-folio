@@ -455,6 +455,10 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 /*fin home*/ 
 
   /*footer*/
+.center{
+  justify-content:space-between;
+}
+
 footer p{
   color: var(--clr-txt-blk);
 }
