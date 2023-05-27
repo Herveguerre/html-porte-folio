@@ -817,14 +817,5 @@ footer p{
   .title{
     display: block;
   }
-  header{
-    height: 400px;
-  }
-  .projet img.rotate {
-    transform: rotate(90deg);
-    width: 140vw;
-    margin-left: -65px;
-    z-index: 99999;
-    
-  }
+
 }
