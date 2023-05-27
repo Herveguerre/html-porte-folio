@@ -222,7 +222,7 @@ a{
   height: 200px;
   border-radius: 50%;
   background: linear-gradient(145deg,#e8e4e4, #fff);
-  box-shadow:  28px 28px 64px #f5f2f6,
+  box-shadow: 28px 28px 64px #f5f2f6,
             -28px -28px 64px #ffffff;
   font-size: 48px;
   font-weight: bold;
@@ -287,14 +287,15 @@ a{
 }
   
 .content {
-  width: 900px; /* Largeur totale du contenu */
+  width: 900px; 
   height: 200px;
   display: flex;
-
 }
+
 .flex{
   display: flex;
 }
+
 /*fin outils*/
 
 /*horloge*/
@@ -435,6 +436,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   width: 300px;
   transition: width 0.5s ease;
   cursor: pointer;
+  margin-bottom: 80px;
 }
 .projet img.agrandi {
   width: 800px;
@@ -446,7 +448,9 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .projet img.rotate {
   transform: rotate(90deg);
-  width: 400px;
+  width: 140vw;
+  margin-left: -65px;
+  z-index: 99999;
   
 }
 /*fin gestion img*/
@@ -465,11 +469,12 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 /*fin home*/ 
 
   /*footer*/
-
+footer p{
+  color: var(--clr-txt-blk);
+}
+  
   /*pacman 203L*/
-  footer p{
-    color: var(--clr-txt-blk);
-  }
+
 .loader-wrapper {
   padding-left: 29px;
   padding-top: 120px;
