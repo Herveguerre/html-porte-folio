@@ -42,7 +42,7 @@ function changerFichierCSS() {
     setCookie('style', 'style2.css', 7); // Stocker le nom du fichier CSS dans le cookie pendant 7 jours
   } else {
     lienCSS.setAttribute('href', 'css/style.css');
-    setCookie('style', 'style.css', 7); // Stocker le nom du fichier CSS dans le cookie pendant 7 jours
+    setCookie('style', 'style.css', 7); 
   }
 }
 
