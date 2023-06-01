@@ -56,17 +56,6 @@ window.addEventListener('load', function() {
   }
 });
 
-
-//burger 
-function toggleNavbar() {
-  var navbarLinks = document.getElementById("navbar-links");
-  if (navbarLinks.style.display === "none") {
-    navbarLinks.style.display = "flex";
-  } else {
-    navbarLinks.style.display = "none";
-  }
-}
-
 //horloge
 function updateClock() {
   var now = new Date();
@@ -77,7 +66,6 @@ function updateClock() {
   document.getElementById('minute').textContent = minute;
 }
 setInterval(updateClock, 1000);
-
 
 //footer
 const expandButton = document.getElementById('expandButton');
@@ -111,89 +99,4 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-});
-
-//formulaire
-function submitForm(event) {
-  event.preventDefault();
-
-  var email = document.getElementById('emailInput').value;
-  var message = document.getElementById('messageInput').value;
-
-  if (email === '' || message === '') {
-      alert("Veuillez remplir tous les champs du formulaire.");
-      return;
-  }
-
-  var formData = new FormData();
-  formData.append('email', email);
-  formData.append('message', message);
-
-  // Envoyer les données à un serveur en utilisant une requête AJAX
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', '/send-email'); // Remplacez "/send-email" par l'URL de votre route serveur
-  xhr.onload = function () {
-      if (xhr.status === 200) {
-          console.log('E-mail envoyé avec succès !');
-          // Réinitialiser le formulaire
-          document.getElementById('emailInput').value = '';
-          document.getElementById('messageInput').value = '';
-      } else {
-          console.log('Une erreur s\'est produite lors de l\'envoi de l\'e-mail.');
-      }
-  };
-  xhr.send(formData);
-}
-
-
-const express = require('express');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
-
-const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
-
-app.post('/send-email', (req, res) => {
-    const email = req.body.email;
-    const message = req.body.message;
-
-    // Configuration du transporteur d'e-mails
-    const transporter = nodemailer.createTransport({
-        service: 'hotmail',
-        auth: {
-            user: 'votre_adresse@hotmail.com', // Remplacez par votre adresse e-mail
-            pass: 'votre_mot_de_passe' // Remplacez par votre mot de passe
-        }
-    });
-
-    // Configuration de l'e-mail
-    const mailOptions = {
-        from: email, // L'expéditeur de l'e-mail sera l'adresse e-mail soumise dans le formulaire
-        to: 'herveguerre@hotmail.fr', // L'adresse e-mail de destination
-        subject: 'Nouveau message de formulaire de contact',
-        text: message
-    };
-
-    // Envoi de l'e-mail
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.log('Une erreur s\'est produite lors de l\'envoi de l\'e-mail:', error);
-            res.status(500).send('Une erreur s\'est produite lors de l\'envoi de l\'e-mail.');
-        } else {
-            console.log('E-mail envoyé avec succès:', info.response);
-            res.status(200).send('E-mail envoyé avec succès !');
-        }
-    });
-});
-
-// Démarrage du serveur
-app.listen(3000, () => {
-    console.log('Serveur démarré sur le port 3000');
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Code à exécuter lorsque la page est entièrement chargée
-
-  // Incluez ici votre code JavaScript qui manipule le DOM, ajoute des événements, etc.
 });
