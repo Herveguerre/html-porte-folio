@@ -36,7 +36,6 @@ function getCookie(cname) {
 
 function changerFichierCSS() {
   var lienCSS = document.getElementById('fichierCSS');
-
   if (lienCSS.getAttribute('href') === 'css/style.css') {
     lienCSS.setAttribute('href', 'css/style2.css');
     setCookie('style', 'style2.css', 7); // Stocker le nom du fichier CSS dans le cookie pendant 7 jours
@@ -50,7 +49,6 @@ function changerFichierCSS() {
 window.addEventListener('load', function() {
   var styleCookie = getCookie('style');
   var lienCSS = document.getElementById('fichierCSS');
-
   if (styleCookie) {
     lienCSS.setAttribute('href', 'css/' + styleCookie);
   }
@@ -61,7 +59,6 @@ function updateClock() {
   var now = new Date();
   var hour = now.getHours().toString().padStart(2, '0');
   var minute = now.getMinutes().toString().padStart(2, '0');
-
   document.getElementById('hour').textContent = hour;
   document.getElementById('minute').textContent = minute;
 }
