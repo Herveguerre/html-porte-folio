@@ -82,21 +82,3 @@ expandButton.addEventListener('click', function() {
 });
 
 
-//image dans projet 
-document.addEventListener('DOMContentLoaded', function() {
-  var images = document.querySelectorAll('.projet img');
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  images.forEach(function(image) {
-    image.addEventListener('click', function() {
-      if (!isMobile) {
-        image.classList.add('agrandi');
-        setTimeout(function() {
-          image.classList.remove('agrandi');
-        }, 2000);
-      } else {
-        image.classList.toggle('rotate');
-      }
-    });
-  });
-});
