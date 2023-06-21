@@ -67,18 +67,23 @@ function updateClock() {
 }
 setInterval(updateClock, 1000);
 
-//footer
-const expandButton = document.getElementById('expandButton');
-const footer = document.getElementById('footer');
+// Fonction pour récupérer et insérer le contenu du footer
+function inclureFooter() {
+  fetch("/components/footer.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("footer").innerHTML = data;
+    });
+}
+inclureFooter();
 
-expandButton.addEventListener('click', function() {
-  footer.classList.toggle('expanded');
-
-  if (footer.classList.contains('expanded')) {
-    expandButton.textContent = 'Voir moins';
-  } else {
-    expandButton.textContent = 'Voir plus';
-  }
-});
-
+// Fonction pour récupérer et insérer le contenu du header
+function inclureFooter() {
+  fetch("/components/header.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("header").innerHTML = data;
+    });
+}
+inclureHeader();
 
