@@ -1,3 +1,12 @@
+// Au chargement de la page, vérifier si un style est stocké dans le cookie et l'appliquer
+window.addEventListener('load', function() {
+  var styleCookie = getCookie('style');
+  var lienCSS = document.getElementById('fichierCSS');
+  if (styleCookie) {
+    lienCSS.setAttribute('href', 'css/' + styleCookie);
+  }
+});
+
 //style css
 
 function changerFichierCSS() {
@@ -45,14 +54,7 @@ function changerFichierCSS() {
   }
 }
 
-// Au chargement de la page, vérifier si un style est stocké dans le cookie et l'appliquer
-window.addEventListener('load', function() {
-  var styleCookie = getCookie('style');
-  var lienCSS = document.getElementById('fichierCSS');
-  if (styleCookie) {
-    lienCSS.setAttribute('href', 'css/' + styleCookie);
-  }
-});
+
 
 //horloge
 function updateClock() {
