@@ -21,6 +21,18 @@
             </div>     
         </div>
     </div>
+    <div id="map"></div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <script>
+      var map = L.map('map').setView([49.2446, 1.4169], 15); // Coordonnées des Andelys : [latitude, longitude], zoom level
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        maxZoom: 18,
+      }).addTo(map);
+    </script>
 </main><div class="line"></div>
 <footer id="footer"></footer> 
 <script src="/script/script.js"></script>  
