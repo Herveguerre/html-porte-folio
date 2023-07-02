@@ -1,10 +1,11 @@
+<script src="script/script.js"></script>  
 <header id="header"></header>
 <div class="line"></div>
 <main id="man">
     <div class="container" >
         <H2>Mes Projets</H2>
         <div class="container_car1" >        
-            <div class="card_1">
+            <!--<div class="card_1">
                 <a href="petshop.html#man" title"pet"><p class="pb">Pet shop</p></a>          
                 <img src="./img/petshop.png" alt="">
             </div>
@@ -31,12 +32,83 @@
             <div class="card_1">
                 <a href="fleur.html#man"><p class="pb">Flow'eure</p></a>          
                 <img src="/img/charte graphique pour/Flow'eure.png" alt="space">
-            </div>
+            </div>-->
         </div>  
+        <div class="container_car1"></div>
+        <script>
+            var tableauInfos = [
+  {
+      titre: "Pet shop",
+      lien: "petshop.html#man",
+      classe: "pb",
+      image: "./img/petshop.png"
+  },
+  {
+      titre: "Four",
+      lien: "four.html#man",
+      classe: "pb",
+      image: "./img/four/vignette four.png"
+  },
+  {
+      titre: "Goat",
+      lien: "goat.html#man",
+      classe: "pw",
+      image: "./img/goat react/vignette goat.png"
+  },
+  {
+      titre: "DISSI Band",
+      lien: "band.html#man",
+      classe: "pw",
+      image: "/img/Disii band/vignette band.png"
+  },
+  {
+      titre: "Sushi de Tokyo",
+      lien: "sushi.html#man",
+      classe: "pb",
+      image: "/img/suchi/vignette sushi.png"
+  },
+  {
+      titre: "Tutube",
+      lien: "tutube.html#man",
+      classe: "pb",
+      image: "/img/tutube/vignette tutube.png"
+  },
+  {
+      titre: "Flow'eure",
+      lien: "fleur.html#man",
+      classe: "pb",
+      image: "/img/charte graphique pour/Flow'eure.png"
+  }
+];
+
+var container = document.querySelector(".container_car1");
+
+tableauInfos.forEach(function(info) {
+  var card = document.createElement("div");
+  card.className = "card_1";
+
+  var aTag = document.createElement("a");
+  aTag.href = info.lien;
+  aTag.title = "pet";
+
+  var pTag = document.createElement("p");
+  pTag.className = info.classe;
+  pTag.textContent = info.titre;
+
+  var imgTag = document.createElement("img");
+  imgTag.src = info.image;
+  imgTag.alt = "";
+
+  aTag.appendChild(pTag);
+  card.appendChild(aTag);
+  card.appendChild(imgTag);
+
+  container.appendChild(card);
+});
+        </script>
         
 </main>
 <div class="line"></div>
 <footer id="footer"></footer>
 
 
-<script src="/script/script.js"></script>  
