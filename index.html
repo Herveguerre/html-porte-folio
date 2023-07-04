@@ -50,6 +50,12 @@
       image: "./img/four/vignette four.png"
   },
   {
+    titre: "web site",
+    lien : "https://html-vitrine-onepage-boulangerie.vercel.app/",
+    classe: "pw",
+    image: "./img/boulangerie.png"
+},
+  {
       titre: "Goat",
       lien: "goat.html#man",
       classe: "pw",
@@ -74,7 +80,7 @@
       image: "/img/tutube/vignette tutube.png"
   },
   {
-      titre: "Flow'eure",
+      titre: "Flow'  eure",
       lien: "fleur.html#man",
       classe: "pb",
       image: "/img/charte graphique pour/Flow'eure.png"
@@ -88,8 +94,12 @@ tableauInfos.forEach(function(info) {
   card.className = "card_1";
 
   var aTag = document.createElement("a");
-  aTag.href = info.lien;
-  aTag.title = "pet";
+    aTag.href = info.lien;
+    aTag.title = "pet";
+    if (info.lien === "https://html-vitrine-onepage-boulangerie.vercel.app/") {
+  aTag.target = "_blank";
+}
+
 
   var pTag = document.createElement("p");
   pTag.className = info.classe;
