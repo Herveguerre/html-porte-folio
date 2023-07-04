@@ -1,38 +1,59 @@
 <header id="header"></header>
-<div class="line"></div> 
+<div class="line"></div>
 <main id="man">
-    <div class="cv">     
-        <div class="container cv">       
-            <div class="contact " >
-                <div>
-                    <p></p><a href="https://www.linkedin.com/in/herve-guerre-2540a6244/" target="_blank">Linkedin</a>
-                </div>
-                <div>
-                    <a href="mailto:herveguerre@hotmail.fr?subject=mail depuis portefolio" target="_blank">Envoyer un e-mail</a>
-                </div>
-                <div>
-                    <p></p><a href="https://github.com/Herveguerre" target="_blank">Github</a>                   
-                </div>
-            </div>
-            <a href="img/CV/cv.gif" title="clic pour télecharger" download><img src="img/CV/cv.gif" alt="cv"></a> 
-            <div class="cv flex" >
-                <button class="btn_theme_s"><a href="index.html#man" title="Voir projets">Projets</a></button>
-                <button class="btn_theme_s"><a href="index.html" title="Acceuil">Acceuil</a></button>
-            </div>     
+  <div class="cv">
+    <div class="container cv">
+      <div class="contact">
+        <div>
+          <p></p>
+          <a
+            href="https://www.linkedin.com/in/herve-guerre-2540a6244/"
+            target="_blank"
+            >Linkedin</a
+          >
         </div>
+        <div>
+          <a
+            href="mailto:herveguerre@hotmail.fr?subject=mail depuis portefolio"
+            target="_blank"
+            >Envoyer un e-mail</a
+          >
+        </div>
+        <div>
+          <p></p>
+          <a href="https://github.com/Herveguerre" target="_blank">Github</a>
+        </div>
+      </div>
+      <a href="img/CV/cv.gif" title="clic pour télecharger" download
+        ><img src="img/CV/cv.gif" alt="cv"
+      /></a>
+      <div class="cv flex">
+        <button class="btn_theme_s">
+          <a href="index.html#man" title="Voir projets">Projets</a>
+        </button>
+        <button class="btn_theme_s">
+          <a href="index.html" title="Acceuil">Acceuil</a>
+        </button>
+      </div>
     </div>
-    <div id="map"></div>
+  </div>
+  <div id="map"></div>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    
-    <script>
-      var map = L.map('map').setView([49.2446, 1.4169], 15); // Coordonnées des Andelys : [latitude, longitude], zoom level
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-        maxZoom: 18,
-        }).addTo(map);
-    </script>
-</main><div class="line"></div>
-<footer id="footer"></footer> 
-<script src="/script/script.js"></script>  
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <script>
+    var map = L.map("map").setView([49.2446, 1.4169], 15); // Coordonnées des Andelys : [latitude, longitude], zoom level
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      maxZoom: 18,
+    }).addTo(map);
+  </script>
+</main>
+<div class="line"></div>
+<footer id="footer"></footer>
+<script src="/script/script.js"></script>
