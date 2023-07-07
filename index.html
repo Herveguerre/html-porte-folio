@@ -55,6 +55,12 @@
     classe: "pw",
     image: "./img/boulangerie.png"
 },
+{
+    titre: "web site",
+    lien : "https://tableau-element.vercel.app/",
+    classe: "pb",
+    image: "./img/element.png"
+},
   {
       titre: "Goat",
       lien: "goat.html#man",
@@ -98,7 +104,12 @@ tableauInfos.forEach(function(info) {
     aTag.title = "pet";
     if (info.lien === "https://html-vitrine-onepage-boulangerie.vercel.app/") {
   aTag.target = "_blank";
+  
 }
+if (info.lien === "https://tableau-element.vercel.app/") {
+    aTag.target = "_blank";
+    
+  }
 
 
   var pTag = document.createElement("p");
