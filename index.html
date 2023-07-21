@@ -2,6 +2,58 @@
 <header id="header"></header>
 <div class="line"></div>
 <main id="man">
+    <a href="#" id="btn-retour-haut" class="bouton-flottant">&#8593;</a>
+    <style>
+      /* Styles du bouton flottant */
+  .bouton-flottant {
+    z-index: 99999999;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #7737f7;
+    color: #fff;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+     display: none; /*On cache le bouton par défaut */
+  }
+  /* Afficher le bouton lorsque l'utilisateur commence à faire défiler la page */
+  #btn-retour-haut.visible {
+    display: block;
+  }
+  
+  .bouton-flottant:hover {
+    background-color: var(--clr1);
+    color: #000;
+  }
+  
+    </style>
+    <script>
+      // Script pour gérer le comportement du bouton flottant
+      const btnRetourHaut = document.getElementById('btn-retour-haut');
+  
+      // Afficher le bouton lorsque l'utilisateur commence à faire défiler la page au-delà de 300px
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          btnRetourHaut.classList.add('visible');
+        } else {
+          btnRetourHaut.classList.remove('visible');
+        }
+      });
+  
+      // Gérer le clic sur le bouton pour remonter en haut de page
+      btnRetourHaut.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
     <div class="container" >
         <H2>Mes Projets</H2>
         <div class="container_car1" >        
@@ -33,6 +85,7 @@
                 <a href="fleur.html#man"><p class="pb">Flow'eure</p></a>          
                 <img src="/img/charte graphique pour/Flow'eure.png" alt="space">
             </div>-->
+
         </div>  
         <div class="container_car1"></div>
         <script>
