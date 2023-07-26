@@ -139,18 +139,22 @@ tableauInfos.forEach(function(info) {
     aTag.href = info.lien;
     aTag.title = "pet";
     if (info.lien === "https://html-vitrine-onepage-boulangerie.vercel.app/") {
-  aTag.target = "_blank";
+      aTag.title = "boulangerie";
+      aTag.target = "_blank";
   
 }
 if (info.lien === "https://tableau-element.vercel.app/") {
+  aTag.title = "tableau";
     aTag.target = "_blank";
     
   }https:
   if (info.lien === "https://nouveau-dossier-2.vercel.app/") {
+    aTag.title = "les recettes d'angelique";
     aTag.target = "_blank";
     
   }
   if (info.lien === "https://neon-lake.vercel.app/") {
+    aTag.title = "pas de moi , mais c'est beau";
     aTag.target = "_blank";
     
   }
