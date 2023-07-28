@@ -121,6 +121,11 @@
     lien: "https://neon-lake.vercel.app/",
     classe: "pw",
     image: "/img/neon.png"
+},{
+  titre: "cassette",
+  lien: "https://casette.vercel.app/",
+  classe: "pb",
+  image: "/img/cassette.png"
 },
   {
     titre: "recettes",
@@ -156,6 +161,11 @@ if (info.lien === "https://tableau-element.vercel.app/") {
   }
   if (info.lien === "https://neon-lake.vercel.app/") {
     aTag.title = "pas de moi , mais c'est beau";
+    aTag.target = "_blank";
+    
+  }
+  if (info.lien === "https://casette.vercel.app/") {
+    aTag.title = "tout en CSS";
     aTag.target = "_blank";
     
   }
