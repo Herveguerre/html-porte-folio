@@ -77,7 +77,7 @@ function inclureFooter() {
 inclureFooter();
 
 // Fonction pour récupérer et insérer le contenu du header
-function inclureFooter() {
+function inclureHeader() {
   fetch("/components/header.html")
     .then((response) => response.text())
     .then((data) => {
@@ -85,5 +85,15 @@ function inclureFooter() {
     });
 }
 inclureHeader();
+
+// Fonction pour récupérer et insérer le contenu du menu
+function inclureMenu() {
+  fetch("/components/menu.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("menu").innerHTML = data;
+    });
+}
+inclureMenu();
 
 
