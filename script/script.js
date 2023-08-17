@@ -97,3 +97,22 @@ function inclureMenu() {
 inclureMenu();
 
 
+ // Script pour gérer le comportement du bouton flottant
+ const btnRetourHaut = document.getElementById('btn-retour-haut');
+  
+ // Afficher le bouton lorsque l'utilisateur commence à faire défiler la page au-delà de 300px
+ window.addEventListener('scroll', () => {
+   if (window.scrollY > 300) {
+     btnRetourHaut.classList.add('visible');
+   } else {
+     btnRetourHaut.classList.remove('visible');
+   }
+ });
+
+ // Gérer le clic sur le bouton pour remonter en haut de page
+ btnRetourHaut.addEventListener('click', () => {
+   window.scrollTo({
+     top: 0,
+     behavior: 'smooth'
+   });
+ });

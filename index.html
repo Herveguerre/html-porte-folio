@@ -3,138 +3,87 @@
 <div class="line"></div>
 <main id="man">
     <a href="#" id="btn-retour-haut" class="bouton-flottant">&#8593;</a>
-    <style>
-      /* Styles du bouton flottant */
-  .bouton-flottant {
-    z-index: 99999999;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #7737f7;
-    color: #fff;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-     display: none; /*On cache le bouton par défaut */
-  }
-  /* Afficher le bouton lorsque l'utilisateur commence à faire défiler la page */
-  #btn-retour-haut.visible {
-    display: block;
-  }
-  
-  .bouton-flottant:hover {
-    background-color: var(--clr1);
-    color: #000;
-  }
-  
-    </style>
-    <script>
-      // Script pour gérer le comportement du bouton flottant
-      const btnRetourHaut = document.getElementById('btn-retour-haut');
-  
-      // Afficher le bouton lorsque l'utilisateur commence à faire défiler la page au-delà de 300px
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          btnRetourHaut.classList.add('visible');
-        } else {
-          btnRetourHaut.classList.remove('visible');
-        }
-      });
-  
-      // Gérer le clic sur le bouton pour remonter en haut de page
-      btnRetourHaut.addEventListener('click', () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-    </script>
     <div class="container" >
         <H2>Mes Projets</H2>
         <div class="container_car1" >        
           
         </div>  
         <div class="container_car1"></div>
-        <script>
-            var tableauInfos = [
-  {
-      titre: "Pet shop",
-      lien: "petshop.html#man",
-      classe: "pb",
-      image: "./img/petshop.png"
-  },
-  {
-      titre: "Four",
-      lien: "four.html#man",
-      classe: "pb",
-      image: "./img/four/vignette four.png"
-  },
-  {
-    titre: "web site",
-    lien : "https://html-vitrine-onepage-boulangerie.vercel.app/",
-    classe: "pw",
-    image: "./img/boulangerie.png"
+<script>
+    var tableauInfos = [
+{
+    titre: "Pet shop",
+    lien: "petshop.html#man",
+    classe: "pb",
+    image: "./img/petshop.png"
 },
 {
-    titre: "web site",
-    lien : "https://tableau-element.vercel.app/",
+    titre: "Four",
+    lien: "four.html#man",
     classe: "pb",
-    image: "./img/element.png"
+    image: "./img/four/vignette four.png"
 },
-  {
-    titre: "Goat",
-    lien: "goat.html#man",
-    classe: "pw",
-    image: "./img/goat react/vignette goat.png",
-    title:"Goat"
-  },
-  {
-    titre: "DISSI Band",
-    lien: "band.html#man",
-    classe: "pw",
-    image: "/img/Disii band/vignette band.png"
-  },
-  {
-    titre: "Sushi de Tokyo",
-    lien: "sushi.html#man",
-    classe: "pb",
-    image: "/img/suchi/vignette sushi.png"
-  },
-  {
-    titre: "Tutube",
-    lien: "tutube.html#man",
-    classe: "pb",
-    image: "/img/tutube/vignette tutube.png"
-  },
-  {
-    titre: "Flow'  eure",
-    lien: "fleur.html#man",
-    classe: "pb",
-    image: "/img/charte graphique pour/Flow'eure.png"
-  },
-  {
-    titre: "neon",
-    lien: "https://neon-lake.vercel.app/",
-    classe: "pw",
-    image: "/img/neon.png"
-  },
-  {
-    titre: "cassette",
-    lien: "https://casette.vercel.app/",
-    classe: "pb",
-    image: "/img/cassette.png"
-  },
-  {
-    titre: "recettes",
-    lien: "https://nouveau-dossier-2.vercel.app/",
-    classe: "pb",
-    image: "/img/final.jpg"
-  },
+{
+  titre: "web site",
+  lien : "https://html-vitrine-onepage-boulangerie.vercel.app/",
+  classe: "pw",
+  image: "./img/boulangerie.png"
+},
+{
+  titre: "web site",
+  lien : "https://tableau-element.vercel.app/",
+  classe: "pb",
+  image: "./img/element.png"
+},
+{
+  titre: "Goat",
+  lien: "goat.html#man",
+  classe: "pw",
+  image: "./img/goat react/vignette goat.png",
+  title:"Goat"
+},
+{
+  titre: "DISSI Band",
+  lien: "band.html#man",
+  classe: "pw",
+  image: "/img/Disii band/vignette band.png"
+},
+{
+  titre: "Sushi de Tokyo",
+  lien: "sushi.html#man",
+  classe: "pb",
+  image: "/img/suchi/vignette sushi.png"
+},
+{
+  titre: "Tutube",
+  lien: "tutube.html#man",
+  classe: "pb",
+  image: "/img/tutube/vignette tutube.png"
+},
+{
+  titre: "Flow'  eure",
+  lien: "fleur.html#man",
+  classe: "pb",
+  image: "/img/charte graphique pour/Flow'eure.png"
+},
+{
+  titre: "neon",
+  lien: "https://neon-lake.vercel.app/",
+  classe: "pw",
+  image: "/img/neon.png"
+},
+{
+  titre: "cassette",
+  lien: "https://casette.vercel.app/",
+  classe: "pb",
+  image: "/img/cassette.png"
+},
+{
+  titre: "recettes",
+  lien: "https://nouveau-dossier-2.vercel.app/",
+  classe: "pb",
+  image: "/img/final.jpg"
+},
 ];
 
 var container = document.querySelector(".container_car1");
